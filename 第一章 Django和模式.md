@@ -274,7 +274,7 @@ Python社区一般喜欢使用“Pythonic”来描述符合Python语言习惯的
 
 更进一步，Django开发者将他们在设计整个框架时使用的设计哲学非常简洁地总结了下来：[https://docs.djangoproject.com/en/dev/misc/design-philosophies/](https://docs.djangoproject.com/en/dev/misc/design-philosophies/)。
 
-尽管这个文档描述的是当初设计Django时的思路，它对开发者开发Django应用仍然非常有帮助。像**不要重复你自己(Don't Repeat Yourself, DIY)**，低耦合，高聚合等设计原则在你开发和维护Django应用的时候非常有用。
+尽管这个文档描述的是当初设计Django时的思路，它对开发者开发Django应用仍然非常有帮助。像**不要重复你自己(Don't Repeat Yourself, DIY)**，**低耦合**，**高聚合**等设计原则在你开发和维护Django应用的时候非常有用。
 
 Django或者Python的最佳实践会以如下方式推荐给你：
 
