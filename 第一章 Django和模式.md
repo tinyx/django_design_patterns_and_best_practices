@@ -270,7 +270,7 @@ Django也实现了不少以上模式。这里列举出部分例子：
 
 Python社区一般喜欢使用“Pythonic”来描述符合Python语言习惯的代码。它特制“Python之禅”指出的设计原则。它把设计原则这样一个非常流行的概念描述得非常好，并且写得跟诗一样。
 
->试着在Python里输入import this来查看“Python之禅”
+>试着在Python里输入`import this`来查看“Python之禅”
 
 更进一步，Django开发者将他们在设计整个框架时使用的设计哲学非常简洁地总结了下来：[https://docs.djangoproject.com/en/dev/misc/design-philosophies/](https://docs.djangoproject.com/en/dev/misc/design-philosophies/)。
 
@@ -280,7 +280,7 @@ Django或者Python的最佳实践会以如下方式推荐给你：
 
 >**最佳实践**:
 >
->使用settings.py里的BASE_DIR来存放目录名而不是硬编码
+>使用`settings.py`里的`BASE_DIR`来存放目录名而不是硬编码
 
 ##总结
 
