@@ -45,7 +45,7 @@ Django也是在很多高流量网站上经历过实战考验的。而且它非�
 
 在2003的秋天，Adrian Holovaty和Simon Willison两位程序员在Lawrence Journal-World报社就职。他们当时准备在Kansas写几个当地的新闻网站。这些包括LJWorld.com, Lawrence.com和KUsports.com的网站和其他的新闻网站一样，不只是需要处理大量文字，照片和视频的内容驱动门户网站，它们还必须满足Lawrence社区对于应用的需求。这些应用包括商业指南，事件日历，分类等等。
 
-###框架的诞生
+##一个框架的诞生
 
 这项任务对于Simon，Adrian和后来加入他们小组的Jacob Kaplan Moss来说毫无疑问是非常重的。给他们的期限常常非常短，有时候甚至只有几个小时。而且当时对于Python来说还是Web框架早期，他们几乎要从头写起。为了节约宝贵的时间，他们逐渐开始重构了一些通用的模块和工具，并将他们整合成了一个他们称之为“The CMS”的系统。
 
@@ -53,15 +53,15 @@ Django也是在很多高流量网站上经历过实战考验的。而且它非�
 
 2005年7月，这个Web开发框架被命名为Django(读作Jang-Oh)，并以开源许可**Berkeley Software Distribution(BSD)**发布了。这个名字来源于传奇爵士吉他手Django Reinhardt。接下来就是众所周知的故事了。
 
-###返璞归真
+##返璞归真
 
 由于Django最初只是一个不起眼的内部工具，它保留了很多只适合Lawrence Journal-World的特性。为了让Django真正成为一个通用的框架，人们发起了一项名为“去除Lawrence”的项目。
 
-但是，对于Django来说真正意义重大的重构其实是另一项被称为“移除魔法”的项目。这一项目包括了去除掉Django常年累积下来的小毛病，以及将很多魔法(编程俚语，指未显式说明的特性)用更自然，更易于阅读的Python风格代码替换。比如说，之前的model类是通过一个神奇的django.models.*模块来引入的，而不是从定义这个类的文件models.py文件显示引入。
+但是，对于Django来说真正意义重大的重构其实是另一项被称为“移除魔法”的项目。这一项目包括了去除掉Django常年累积下来的小毛病，以及将很多魔法(编程俚语，指未显式说明的特性)用更自然，更易于阅读的Python风格代码替换。比如说，之前的model类是通过一个神奇的`django.models.*`模块来引入的，而不是从定义这个类的文件`models.py`文件显式引入。
 
 那个时候，Django积累了数十万行代码，并且API也几乎被大量重写了。在2006年5月1日，所有这些加起来快够一小本书的代码被整合进了Django的开发版本，并且以0.95版本号发布了。这是在通往发布Django 1.0的里程碑上迈出的非常重要的一步。
 
-###Django不断变得更好
+##Django不断变得更好
 
 每年都会有被称为DjangoCons的会议在世界各地举办，以便让Django开发者之间能互相交流。他们有一个非常可爱的传统，即展示一个半幽默式的幻灯片“为什么Django弱爆了”。展示者可以是Django社区的成员，也可以是其他竞争Web框架的使用者，或者是某个名人。
 
@@ -118,7 +118,7 @@ Django也是在很多高流量网站上经历过实战考验的。而且它非�
 
 设计模式的数量并不少，但是其中有部分影响力非常大。
 
-###模式四人帮
+##模式四人帮
 
 早期有一本关于帮助学习并汇总了一些设计模式的书，叫做_Design Patterns: Elements of Reuseable Object-Oriented Software_。这本书的四位作者，Erich Gamma，Richard Helm，Ralph Johnson和John Vlissides后来被称作**四人帮**(Gan of four)。这本书影响力大到不少人将其中包含的23个设计模式看作是软件工程的基础。
 
@@ -171,7 +171,7 @@ Django将之称为**模型－模板－视图**(MTV)架构。数据库底层类(�
 
 如果你还没被绕糊涂，Django倾向于将处理不同URL的函数命名为“视图”函数。这里的视图和MVC模式里的视图并不是同一个概念。
 
-###Fowler的模式
+##Fowler的模式
 
 2002年，Martin Fowler写了一本名为_Patterns of Enterprise Application Architecture_的书，书里描述了他在搭建企业级应用时所常遇到的约40种模式。
 
@@ -229,7 +229,7 @@ Django也实现了不少以上模式。这里列举出部分例子：
 
 还有一些包含了模式手册的书包括：Buschmann，Meunier，Rohnert，Sommerlad和Sta的_Pattern-Oriented Software Architecture_(一般称作POSA)；Hohpe和Woolf的_Enterprise Integration Patterns_以及Duyne，Landay和Hong的_The Design of Sites: Patterns, Principles, and Processes for Crafting a Customer-Centered Web Experience_。
 
-###这本书里的模式
+##这本书里的模式
 
 这本书会讲到Django开发者关心的跟Django相关的设计和构建模式。以下部分会描述我们将以何种方式呈现这些模式。
 
@@ -245,7 +245,7 @@ Django也实现了不少以上模式。这里列举出部分例子：
 
 **解决方案细节**： 解释问题的通用解法并给出Django实现的样例
 
-###关于模式的批判
+##关于模式的批判
 
 尽管模式被广泛使用，我们仍然能看到一些关于模式的负面评价：
 
@@ -253,7 +253,7 @@ Django也实现了不少以上模式。这里列举出部分例子：
  - **模式实际上就是在重复最佳实践**： 很多模式实质上是很多最佳实践，比如概念分离的组合而已，它们也许是多余的。
  - **模式也许会导致过度开发**： 与实现一个简单的解决方案相比，实现一个模式有时候会更低效更繁琐。
 
-###如何使用模式
+##如何使用模式
 
 尽管上述批判不少是有道理的，但是很多仍然是因为对模式错误的使用而导致的。以下建议可以帮助你更好的理解如何正确使用模式：
 
@@ -262,11 +262,11 @@ Django也实现了不少以上模式。这里列举出部分例子：
  - 只有当模式在你的情况里是最优雅的解决方式时才使用它
  - 不要害怕创造新的模式
 
-###最佳实践
+##最佳实践
 
 除了设计模式以外，一个问题往往有一个推荐的途径。在Django，同时也是Python里，解决一个问题往往有好几种不同的方式，但是其中也藏着最符合语言习惯的一个。
 
-###Python之禅和Django的设计哲学
+##Python之禅和Django的设计哲学
 
 Python社区一般喜欢使用“Pythonic”来描述符合Python语言习惯的代码。它特制“Python之禅”指出的设计原则。它把设计原则这样一个非常流行的概念描述得非常好，并且写得跟诗一样。
 
